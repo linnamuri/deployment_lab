@@ -7,7 +7,7 @@ const app = express()
 app.use(express.static(path.join(__dirname,"/../public")))
 
 app.get('/',function(req,res) {
-  res.sendFile(path.resolve( 'public/index.html'));
+  res.sendFile(path.resolve( __dirname,'../public/index.html'));
 });
 public/homedir.html
 
